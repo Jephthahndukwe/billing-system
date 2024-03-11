@@ -157,8 +157,8 @@ const Dashboard = ({handleLogout}) => {
                             <h2 className='text-[#ff0000] text-[16px] font-[700] leading-[18px] bg-[#ffff00] text-center'>Latest Receivable</h2>
                                 <table className='border-collapse'>
                                     <tr>
-                                        <th className='bg-[#153450] border-[1px] border-solid border-[#eee] py-[10px] lg:px-[40px] xs:px-[70px] text-center text-[#fff] font-[400]'>CODE</th>
-                                        <th className='bg-[#153450] border-[1px] border-solid border-[#eee] py-[10px] lg:px-[40px] xs:px-[70px] text-center text-[#fff] font-[400]'>DATE</th>
+                                        <th className='bg-[#153450] border-[1px] border-solid border-[#eee] py-[10px] lg:px-[40px] xs:px-[72px] text-center text-[#fff] font-[400]'>CODE</th>
+                                        <th className='bg-[#153450] border-[1px] border-solid border-[#eee] py-[10px] lg:px-[40px] xs:px-[72px] text-center text-[#fff] font-[400]'>DATE</th>
                                     </tr>
                                     <tr>
                                         <td className='px-[10px] border-[1px] border-solid border-[#eee] py-[10px] text-center text-[#000] font-[400]'>SO-113434</td>
