@@ -23,13 +23,13 @@ const Navbar = () => {
                     <h1><Link to='/invoicelist'>Invoice List</Link></h1>
                 </div>
                 <div className='border-[2px] border-solid border-[#f8f9fa] bg-[#fff] lg:py-[20px] xs:py-[12px] lg:px-[20px] xs:px-[10px] text-[#c2c1c1] text-[14px] font-[500]'>
-                    <h1>Sales Report</h1>
+                    <h1><Link to='/sales'>Sales Report</Link></h1>
                 </div>
                 <div className='border-[2px] border-solid border-[#f8f9fa] bg-[#fff] lg:py-[20px] xs:py-[12px] lg:px-[20px] xs:px-[10px] text-[#c2c1c1] text-[14px] font-[500]'>
-                    <h1>Add Product</h1>
+                    <h1><Link to='/product'>Add Product</Link></h1>
                 </div>
                 <div className='border-[2px] border-solid border-[#f8f9fa] bg-[#fff] lg:py-[20px] xs:py-[12px] lg:px-[20px] xs:px-[10px] text-[#c2c1c1] text-[14px] font-[500]'>
-                    <h1>Add Sales</h1>
+                    <h1><Link to='/addsale'>Add Sales</Link></h1>
                 </div>
             </div>
             <div className='flex justify-end items-end lg:mt-0 xs:mt-[2rem]'>

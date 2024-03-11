@@ -8,6 +8,9 @@ import Customer from './Pages/Customer'
 import Invoice from './Pages/Invoice'
 import InvoiceList from './Pages/InvoiceList'
 import Login from './Auth/Login'
+import Sales from './Pages/Sales'
+import Product from './Pages/Product'
+import AddSales from './Pages/AddSales'
 
 function App({ setLoggedIn, setIsAdmin }) {
 
@@ -21,6 +24,9 @@ function App({ setLoggedIn, setIsAdmin }) {
           <Route path='customer' element={ <Customer/> } />
           <Route path='invoice' element={ <Invoice/> } />
           <Route path='invoicelist' element={ <InvoiceList/> } />
+          <Route path='sales' element={ <Sales/> } />
+          <Route path='product' element={ <Product/> } />
+          <Route path='addsale' element={ <AddSales/> } />
         </Routes>
       </Router>
     </>
