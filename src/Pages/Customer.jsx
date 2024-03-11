@@ -133,8 +133,8 @@ const Customer = () => {
         <TopNavbar/>
         <Navbar/>
         <div className='bg-[#F8F9FA] pt-[1rem] pb-[2rem]'>
-      <div className='flex gap-[1rem] px-[20px]'>
-        <aside className='w-[20%] h-[75vh] bg-[#fff] border-[1.5px] border-solid border-[#eee]'>
+      <div className='flex gap-[1rem] lg:px-[20px] xs:px-[10px]'>
+        <aside className='w-[20%] h-[75vh] bg-[#fff] border-[1.5px] border-solid border-[#eee] lg:block xs:hidden'>
           <h2 className='text-[14px] bg-[#153450] py-[15px] px-[20px] text-[#fff] font-[500]'>QUICK LINKS</h2>
           <div className=''>
             <h2 className='pt-[10px] px-[20px] text-[14px] font-[400] border-b-[1px] border-b-solid border-b-[#eee] pb-3'><span>Payment Collection</span></h2>
@@ -148,9 +148,9 @@ const Customer = () => {
             <h2 className='pt-[10px] px-[20px] text-[14px] font-[400] pb-3'><span>Drill Down Report</span></h2>
           </div>
         </aside>
-        <div className='w-[80%]'>
-          <h2 className='text-[14px] bg-[#153450] py-[15px] px-[20px] text-[#fff] font-[500]'>ADD CUSTOMER PROFILE</h2>
-            <div className='bg-[#fff] border-[1.5px] border-solid border-[#eee] p-[10px] pb-[4rem] px-[40px]'>
+        <div className='lg:w-[80%] xs:w-[95vw]'>
+          <h2 className='text-[14px] bg-[#153450] py-[15px] lg:px-[20px] xs:px-[10px] text-[#fff] font-[500]'>ADD CUSTOMER PROFILE</h2>
+            <div className='bg-[#fff] border-[1.5px] border-solid border-[#eee] p-[10px] pb-[4rem] lg:px-[40px] xs:px-[10px]'>
                 <form className="px-[10px] mt-8 flex flex-wrap">
                     <div className="mb-4 w-full md:w-1/2 md:pr-4">
                         <label htmlFor="userId" className="block text-sm font-medium text-gray-700">User ID</label>
@@ -208,7 +208,7 @@ const Customer = () => {
                         <label htmlFor="other" className="block text-sm font-medium text-gray-700">Other</label>
                         <input type="text" id="other" className="mt-3 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-md py-[5px] px-[10px] outline-none sm:text-sm border-gray-300 rounded-md" />
                     </div>
-                    <div className='flex items-start justify-start gap-3 mt-[2rem]'>
+                    <div className='flex flex-wrap items-start justify-start gap-3 mt-[2rem]'>
                         <button type='submit' className='bg-[#5081b3] py-[10px] px-[50px] text-[12px] rounded-[20px] text-[#fff] font-[700] text-center'>SAVE</button>
                         <button type='submit' className='bg-[#5081b3] py-[10px] px-[50px] text-[12px] rounded-[20px] text-[#fff] font-[700] text-center'>DELETE</button>
                         <button type='submit' className='bg-[#5081b3] py-[10px] px-[50px] text-[12px] rounded-[20px] text-[#fff] font-[700] text-center'>CANCEL</button>
@@ -216,7 +216,7 @@ const Customer = () => {
                     </div>
                 </form>
 
-                <div className='px-[20px] mt-[5rem] overflow-x-auto'>
+                <div className='lg:px-[20px] xs:px-[10px] mt-[5rem] overflow-x-auto'>
                     <table className='border-collapse'>
                         <tr>
                             <th className='bg-[#153450] border-[1px] border-solid border-[#eee] py-[10px] px-[10px] w-[20%] text-start text-[#fff] font-[400] text-[11px]'>CODE PRO NAME</th>

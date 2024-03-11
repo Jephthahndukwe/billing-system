@@ -8,8 +8,8 @@ const Invoice = () => {
         <TopNavbar/>
         <Navbar/>
         <div className='bg-[#F8F9FA] pt-[1rem] pb-[2rem]'>
-      <div className='flex gap-[1rem] px-[20px]'>
-        <aside className='w-[20%] h-[75vh] bg-[#fff] border-[1.5px] border-solid border-[#eee]'>
+      <div className='flex gap-[1rem] lg:px-[20px] xs:px-[10px]'>
+        <aside className='w-[20%] h-[75vh] bg-[#fff] border-[1.5px] border-solid border-[#eee] lg:block xs:hidden'>
           <h2 className='text-[14px] bg-[#153450] py-[15px] px-[20px] text-[#fff] font-[500]'>QUICK LINKS</h2>
           <div className=''>
             <h2 className='pt-[10px] px-[20px] text-[14px] font-[400] border-b-[1px] border-b-solid border-b-[#eee] pb-3'><span>Payment Collection</span></h2>
@@ -23,9 +23,9 @@ const Invoice = () => {
             <h2 className='pt-[10px] px-[20px] text-[14px] font-[400] pb-3'><span>Drill Down Report</span></h2>
           </div>
         </aside>
-        <div className='w-[80%]'>
-        <h2 className='text-[14px] bg-[#153450] py-[15px] px-[20px] text-[#fff] font-[500]'>GENERATE MONTHLY INVOICE</h2>
-            <div className='bg-[#fff] border-[1.5px] border-solid border-[#eee] p-[10px] pb-[4rem] px-[40px]'>
+        <div className='lg:w-[80%] xs:w-[95vw]'>
+        <h2 className='text-[14px] bg-[#153450] py-[15px] lg:px-[20px] xs:px-[10px] text-[#fff] font-[500]'>GENERATE MONTHLY INVOICE</h2>
+            <div className='bg-[#fff] border-[1.5px] border-solid border-[#eee] p-[10px] pb-[4rem] lg:px-[40px] xs:px-[10px]'>
                 <form className="px-[10px] mt-8 flex flex-wrap">
                     <span className="mb-4 w-full md:w-1/2 md:pr-4">
                         <label>Invoice Creation Date</label><br/>
@@ -50,8 +50,8 @@ const Invoice = () => {
                         </select>
                     </span>
                     <div className='flex items-start justify-start gap-3 mt-4'>
-                        <button type='submit' className='bg-[#5081b3] py-[10px] px-[30px] text-[12px] rounded-[20px] text-[#fff] font-[700] text-center'>Generate All Invoices</button>
-                        <button type='submit' className='bg-[#5081b3] py-[10px] px-[50px] text-[12px] rounded-[20px] text-[#fff] font-[700] text-center'>Delete All Invoices</button>
+                        <button type='submit' className='bg-[#5081b3] py-[10px] lg:px-[30px] xs:px-[17px] text-[12px] rounded-[20px] text-[#fff] font-[700] text-center'>Generate All Invoices</button>
+                        <button type='submit' className='bg-[#5081b3] py-[10px] lg:px-[50px] xs:px-[17px] text-[12px] rounded-[20px] text-[#fff] font-[700] text-center'>Delete All Invoices</button>
                     </div>
                 </form>
                 <form className='mt-[3rem]'>

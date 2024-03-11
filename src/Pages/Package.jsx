@@ -85,8 +85,8 @@ const Package = () => {
         <TopNavbar/>
         <Navbar/>
         <div className='bg-[#F8F9FA] pt-[1rem] pb-[2rem]'>
-      <div className='flex gap-[1rem] px-[20px]'>
-        <aside className='w-[20%] h-[75vh] bg-[#fff] border-[1.5px] border-solid border-[#eee]'>
+      <div className='flex gap-[1rem] lg:px-[20px] xs:px-[10px]'>
+        <aside className='w-[20%] h-[75vh] bg-[#fff] border-[1.5px] border-solid border-[#eee] lg:block xs:hidden'>
           <h2 className='text-[14px] bg-[#153450] py-[15px] px-[20px] text-[#fff] font-[500]'>QUICK LINKS</h2>
           <div className=''>
             <h2 className='pt-[10px] px-[20px] text-[14px] font-[400] border-b-[1px] border-b-solid border-b-[#eee] pb-3'><span>Payment Collection</span></h2>
@@ -100,20 +100,20 @@ const Package = () => {
             <h2 className='pt-[10px] px-[20px] text-[14px] font-[400] pb-3'><span>Drill Down Report</span></h2>
           </div>
         </aside>
-        <div className='w-[80%]'>
+        <div className='lg:w-[80%] xs:w-[95vw]'>
          <h2 className='text-[14px] bg-[#153450] py-[15px] px-[20px] text-[#fff] font-[500]'>ADD PACKAGE</h2>
             <div className='bg-[#fff] border-[1.5px] border-solid border-[#eee] p-[10px] pb-[4rem]'>
                 <form>
-                    <div className='flex flex-wrap items-center justify-between px-[40px] pt-[2rem]'>
+                    <div className='flex flex-wrap items-center justify-between lg:px-[40px] xs:px-[10px] pt-[2rem]'>
                         <span>
                             <label>Package Code</label>
                             <input type="text" className='border-b-[1px] border-b-solid border-b-[#153450] outline-none py-[1px] rounded-[2px] w-[100%] mt-4' />
                         </span>
-                        <span>
+                        <span className='lg:mt-0 xs:mt-[3rem]'>
                             <label>Package Name</label>
                             <input type="text" className='border-b-[1px] border-b-solid border-b-[#153450] outline-none py-[1px] rounded-[2px] w-[100%] mt-4' />
                         </span>
-                        <span>
+                        <span className='lg:mt-0 xs:mt-[3rem]'>
                             <label>Company Name</label>
                             <input type="text" className='border-b-[1px] border-b-solid border-b-[#153450] outline-none py-[1px] rounded-[2px] w-[100%] mt-4' />
                         </span>
@@ -122,14 +122,14 @@ const Package = () => {
                             <input type="number" className='border-b-[1px] border-b-solid border-b-[#153450] outline-none py-[1px] rounded-[2px] w-[100%] mt-4' />
                         </span>
                     </div>
-                    <div className='flex items-end justify-end gap-3 px-[30px] mt-[3rem]'>
+                    <div className='flex flex-wrap xs:justify-start xs:items-start lg:items-end lg:justify-end gap-3 lg:px-[30px] xs:px-[10px] mt-[3rem]'>
                         <button type='submit' className='bg-[#5081b3] py-[10px] px-[50px] text-[12px] rounded-[20px] text-[#fff] font-[700] text-center'>SAVE</button>
                         <button type='submit' className='bg-[#5081b3] py-[10px] px-[50px] text-[12px] rounded-[20px] text-[#fff] font-[700] text-center'>DELETE</button>
                         <button type='submit' className='bg-[#5081b3] py-[10px] px-[50px] text-[12px] rounded-[20px] text-[#fff] font-[700] text-center'>CANCEL</button>
                         <button type='submit' className='bg-[#5081b3] py-[10px] px-[50px] text-[12px] rounded-[20px] text-[#fff] font-[700] text-center'>SEARCH</button>
                     </div>
                 </form>
-                <div className='px-[40px] mt-[5rem] overflow-x-auto h-[75vh]'>
+                <div className='lg:px-[40px] xs:px-[10px] mt-[5rem] overflow-x-auto h-[75vh]'>
                     <table className='border-collapse'>
                         <tr>
                             <th className='bg-[#153450] border-[1px] border-solid border-[#eee] py-[10px] px-[20px] w-[25%] text-start text-[#fff] font-[400] text-[13px]'>PACKAGE CODE</th>

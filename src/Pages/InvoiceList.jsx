@@ -104,8 +104,8 @@ const InvoiceList = () => {
         <TopNavbar/>
         <Navbar/>
         <div className='bg-[#F8F9FA] pt-[1rem] pb-[2rem]'>
-      <div className='flex gap-[1rem] px-[20px]'>
-        <aside className='w-[20%] h-[75vh] bg-[#fff] border-[1.5px] border-solid border-[#eee]'>
+      <div className='flex gap-[1rem] lg:px-[20px] xs:px-[10px]'>
+        <aside className='w-[20%] h-[75vh] bg-[#fff] border-[1.5px] border-solid border-[#eee] lg:block xs:hidden'>
           <h2 className='text-[14px] bg-[#153450] py-[15px] px-[20px] text-[#fff] font-[500]'>QUICK LINKS</h2>
           <div className=''>
             <h2 className='pt-[10px] px-[20px] text-[14px] font-[400] border-b-[1px] border-b-solid border-b-[#eee] pb-3'><span>Payment Collection</span></h2>
@@ -119,17 +119,17 @@ const InvoiceList = () => {
             <h2 className='pt-[10px] px-[20px] text-[14px] font-[400] pb-3'><span>Drill Down Report</span></h2>
           </div>
         </aside>
-        <div className='w-[80%]'>
+        <div className='lg:w-[80%] xs:w-[95vw]'>
         <h2 className='text-[14px] bg-[#153450] py-[15px] px-[20px] text-[#fff] font-[500]'>INVOICE LIST</h2>
-            <div className='bg-[#fff] border-[1.5px] border-solid border-[#eee] p-[10px] pb-[4rem] px-[40px]'>
+            <div className='bg-[#fff] border-[1.5px] border-solid border-[#eee] p-[10px] pb-[4rem] lg:px-[40px] xs:px-[10px]'>
                 <div className='mt-[2rem]'>
                     <form>
                         <label>Search By</label>
-                        <input type='search'  className='border-b-[1px] border-b-solid border-b-[#153450] outline-none py-[1px] rounded-[2px] w-[40%] ms-[2rem]' />
+                        <input type='search'  className='border-b-[1px] border-b-solid border-b-[#153450] outline-none py-[1px] rounded-[2px] lg:w-[40%] xs:w-[70%] lg:ms-[2rem] xs:ms-[1rem]' />
                     </form>
                     <h2 className='mt-[3rem] text-[16px] font-[700] underline'>All Invoice List</h2>
-                    <div className='mt-1'>
-                        <table>
+                    <div className='lg:mt-1 xs:mt-4 overflow-x-auto h-[75vh]'>
+                        <table className='border-collapse'>
                             <tr>
                                 <th className='bg-[#153450] border-[1px] border-solid border-[#eee] py-[10px] px-[10px] w-[20%] text-start text-[#fff] font-[400] text-[11px]'>SO-CODE</th>
                                 <th className='bg-[#153450] border-[1px] border-solid border-[#eee] py-[10px] px-[10px] w-[20%] text-start text-[#fff] font-[400] text-[11px]'>SO DATE</th>

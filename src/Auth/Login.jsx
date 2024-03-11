@@ -40,23 +40,23 @@ const Login = () => {
 
   return (
     <div>
-        <div className='py-[5px] px-[40px] flex justify-between items-center'>
+        <div className='py-[5px] lg:px-[40px] xs:px-[10px] flex justify-between items-center'>
             <div>
                 <div className='flex items-center gap-2'>
-                    <div className='bg-[#FFB400] text-[25px] p-[10px] text-[#fff] rounded-[100px]'><RiLock2Fill /></div>
+                    <div className='bg-[#FFB400] lg:text-[25px] xs:text-[14px] p-[10px] text-[#fff] rounded-[100px]'><RiLock2Fill /></div>
                     <div>
-                        <h2 className='text-[18px] font-[500] leading-[18px]'>LOGIN TO DASHBOARD</h2>
-                        <p className='text-[#9498a1] text-[10px] font-[400] leading-[18px]'>Enter your credentials below</p>
+                        <h2 className='lg:text-[18px] xs:text-[14px] w-[150%] font-[500] leading-[18px]'>LOGIN TO DASHBOARD</h2>
+                        <p className='text-[#9498a1] lg:text-[10px] xs:text-[9px] font-[400] leading-[18px]'>Enter your credentials below</p>
                     </div>
                 </div>
             </div>
-            <div>
-                <img src={logo} className='w-[40%]' />
+            <div className='flex justify-end items-end'>
+                <img src={logo} className='lg:w-[40%] xs:w-[30%]' />
             </div>
         </div>
-        <h2 className='text-[32px] text-center font-[700] leading-[18px] tracking-[3px] mt-[4rem]'><span className='text-[#2A2E70]'>Tizeti</span> <span className='text-[#008000]'>Internet Service Provider</span></h2>
+        <h2 className='text-[32px] text-center font-[700] xs:leading-[40px] lg:leading-[18px] tracking-[3px] mt-[4rem]'><span className='text-[#2A2E70]'>Tizeti</span> <span className='text-[#008000]'>Internet Service Provider</span></h2>
         <div className='flex justify-center items-center mt-[3rem] pb-[5rem]'>
-            <form className='px-[40px] shadow-2xl w-[50%] pt-[3rem] pb-[3rem]' onSubmit={(e) => e.preventDefault()}>
+            <form className='lg:px-[40px] xs:px-[15px] shadow-2xl lg:w-[50%] xs:w-[95%] pt-[3rem] pb-[3rem]' onSubmit={(e) => e.preventDefault()}>
                 <div>
                     <label className='text-[16px] font-[600]'>Username</label><br/>
                     <input 
