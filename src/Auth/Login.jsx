@@ -43,7 +43,7 @@ const Login = () => {
         <div className='py-[5px] lg:px-[40px] xs:px-[10px] flex justify-between items-center'>
             <div>
                 <div className='flex items-center gap-2'>
-                    <div className='bg-[#FFB400] lg:text-[25px] xs:text-[14px] p-[10px] text-[#fff] rounded-[100px]'><RiLock2Fill /></div>
+                    <div className='bg-[#FD6600] lg:text-[25px] xs:text-[14px] p-[10px] text-[#fff] rounded-[100px]'><RiLock2Fill /></div>
                     <div>
                         <h2 className='lg:text-[18px] xs:text-[14px] w-[150%] font-[500] leading-[18px]'>LOGIN TO DASHBOARD</h2>
                         <p className='text-[#9498a1] lg:text-[10px] xs:text-[9px] font-[400] leading-[18px]'>Enter your credentials below</p>
