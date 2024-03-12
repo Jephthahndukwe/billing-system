@@ -18,6 +18,9 @@ import Mail from './Quick Links/Mail'
 import Area from './Quick Links/Area'
 import Expense from './Quick Links/Expense'
 import Collection from './Quick Links/Collection'
+import DrillDown from './Quick Links/DrillDown'
+import ExpenseReport from './Quick Links/ExpenseReport'
+import History from './Quick Links/History'
 
 function App({ setLoggedIn, setIsAdmin }) {
 
@@ -41,8 +44,11 @@ function App({ setLoggedIn, setIsAdmin }) {
           <Route path='mail' element={ <Mail/> } />
           <Route path='area' element={ <Area/> } />
           <Route path='expense' element={ <Expense/> } />
+          <Route path='expensereport' element={ <ExpenseReport/> } />
           <Route path='collection' element={ <Collection/> } />
+          <Route path='drilldown' element={ <DrillDown/> } />
           <Route path='report' element={ <Report/> } />
+          <Route path='history' element={ <History/> } />
         </Routes>
       </Router>
     </>
