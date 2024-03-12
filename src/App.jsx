@@ -11,6 +11,13 @@ import Login from './Auth/Login'
 import Sales from './Pages/Sales'
 import Product from './Pages/Product'
 import AddSales from './Pages/AddSales'
+import Payment from './Quick Links/Payment'
+import Report from './Quick Links/Report'
+import Company from './Quick Links/Company'
+import Mail from './Quick Links/Mail'
+import Area from './Quick Links/Area'
+import Expense from './Quick Links/Expense'
+import Collection from './Quick Links/Collection'
 
 function App({ setLoggedIn, setIsAdmin }) {
 
@@ -27,6 +34,15 @@ function App({ setLoggedIn, setIsAdmin }) {
           <Route path='sales' element={ <Sales/> } />
           <Route path='product' element={ <Product/> } />
           <Route path='addsale' element={ <AddSales/> } />
+
+          {/* QUICK LINKS */}
+          <Route path='payment' element={ <Payment/> } />
+          <Route path='company' element={ <Company/> } />
+          <Route path='mail' element={ <Mail/> } />
+          <Route path='area' element={ <Area/> } />
+          <Route path='expense' element={ <Expense/> } />
+          <Route path='collection' element={ <Collection/> } />
+          <Route path='report' element={ <Report/> } />
         </Routes>
       </Router>
     </>
